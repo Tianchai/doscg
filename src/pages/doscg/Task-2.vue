@@ -76,7 +76,7 @@ export default {
         ac: this.form.ac.value,
       };
       this.isLoading = true;
-      axios.post('http://localhost:8000/doscg/task-2', body)
+      axios.post('http://localhost:3000/doscg/task-2', body)
         .then((res) => {
           const data = res.data;
           this.result.b = data.b;

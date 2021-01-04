@@ -78,7 +78,7 @@ export default {
     onSubmit() {
       const body = this.form;
       this.isLoading = true;
-      axios.post('http://localhost:8000/doscg/task-1', body)
+      axios.post('http://localhost:3000/doscg/task-1', body)
         .then((res) => {
           Object.entries(res.data).forEach(([key, value]) => {
             this.form[key] = value;
