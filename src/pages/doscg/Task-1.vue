@@ -71,18 +71,18 @@ export default {
   },
   methods: {
     onReset() {
-      for ([key, value] of Object.entries(defaultForm)) {
+      Object.entries(defaultForm).forEach(([key, value]) => {
         this.form[key] = value;
-      }
+      });
     },
     onSubmit() {
       const body = this.form;
       this.isLoading = true;
       axios.post('http://localhost:8000/doscg/task-1', body)
         .then((res) => {
-          for ([key, value] of Object.entries(res.data)) {
+          Object.entries(res.data).forEach(([key, value]) => {
             this.form[key] = value;
-          }
+          });
           this.isLoading = false;
         })
         .catch((err) => {
