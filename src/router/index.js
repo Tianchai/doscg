@@ -4,6 +4,7 @@ import Index from '@/pages/index';
 import Task1 from '@/pages/doscg/Task-1';
 import Task2 from '@/pages/doscg/Task-2';
 import Task3 from '@/pages/doscg/Task-3';
+import Task4 from '@/pages/doscg/Task-4';
 import CV from '@/pages/doscg/CV';
 
 Vue.use(Router);
@@ -30,6 +31,11 @@ export default new Router({
       path: '/doscg/task-3',
       name: 'Task 3',
       component: Task3,
+    },
+    {
+      path: '/doscg/task-4',
+      name: 'Task 4',
+      component: Task4,
     },
     {
       path: '/doscg/cv',
