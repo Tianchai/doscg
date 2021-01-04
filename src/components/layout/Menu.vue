@@ -26,6 +26,10 @@ export default {
     return {
       menu: [
         {
+          label: 'Task 1',
+          name: 'Task 1',
+        },
+        {
           label: 'CV',
           name: 'CV',
         },
