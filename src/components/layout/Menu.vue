@@ -30,6 +30,10 @@ export default {
           name: 'Task 1',
         },
         {
+          label: 'Task 2',
+          name: 'Task 2',
+        },
+        {
           label: 'CV',
           name: 'CV',
         },
